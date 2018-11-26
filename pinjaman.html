@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>Input Data Pada Tabel</title>
+	<script src="script.js"></script>
+	<style>
+		body{
+			background-image: radial-gradient(#5BD98B,#0047b3);
+			font-size: 14px;
+		}
+		header{
+			font-size: 24px;
+			font-family: sans-serif;
+			text-transform: uppercase;
+			margin-left: 650px;
+			margin-bottom: -30px;
+			margin-top: 20px;
+			font-weight: bold;
+		}
+		fieldset{
+			background-image: radial-gradient(#5BD98B);
+			width: 800px;
+			margin: auto;
+		}
+		input{
+			background-color: #B9F9D1;
+			width: 240px;
+			height: 40px;
+		}
+		h3{
+			font-size: 18px;
+			margin-top: 20px;
+		}
+		textarea{
+			background-color: #B9F9D1;
+			width: 240px;
+			height: 50px;
+		}
+		table{
+			cursor: pointer;
+			border-collapse: collapse;
+			width: 1500px;
+			height: 40px;
+			margin-top: 30px;
+		}
+		th{
+			border: 1px solid black;
+			height: 40px;
+			background-color: #43DCBE;
+		}
+		td, tr{
+			text-align: center;
+			height: 40px;
+			background-color: #8EFFE9;
+		}
+		button{
+			border: none;
+			font-size: 18px;
+			border-radius: 15px;
+			margin-top: -40px;
+			background-color: #4B8E81;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		button:hover{
+			background-color: #6AFFE2;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		KOPERASI UNEJ
+	</header>
+	<form name="koperasi" method="post" action="tutor.html">
+	<pre>
+	<fieldset><legend><h2><b>Informasi Peminjam</b></h2></legend>
+	Nama Peminjam			: <input type="text" name="nama">
+
+	Alamat				: <textarea name="alamat"></textarea>
+
+	Pekerjaan			: <input type="text" name="kerja">
+
+	Identitas			: <input type="text" name="identitas" placeholder="KTP/SIM/KTM">
+
+	Nomor Identitas			: <input type="number" name="nomer">
+
+	Bunga				: <input type="number" name="bunga" value="0.10">
+
+	Keterangan			: <textarea name="keterangan"></textarea>
+	
+
+	<center><button type="button" onclick="terimainput()" value="simpan">Simpan</button> &nbsp;		<button type="reset" value="ulangi">Ulangi</button></center></fieldset></pre>
+	</form>
+
+	<table border="1" id="data">
+		<tr>
+			<th>Nama Peminjam</th>
+			<th>Alamat</th>
+			<th>Pekerjaan</th>
+			<th>Identitas</th>
+			<th>Nomor Identitas</th>
+			<th>Bunga</th>
+			<th>Keterangan</th>
+		</tr>
+	</table>
+</body>
+</html>
