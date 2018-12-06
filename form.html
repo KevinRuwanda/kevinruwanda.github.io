@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<center><font size="10" face="rockwell condensed">Koperasi UNEJ</font></center>
+    <link rel="stylesheet" type="text/css" href="form.css">
+	</head>
+<body>
+	<body bgcolor="skyblue" "><table bgcolor="lightblue" align="center" border =0 cellpadding="7" cellspacing="10">
+<form name="koperasi" method="POST" action="ngehe.php" enctype="multipart/form-data">
+  <input type="hidden" name="halaman" value="2">
+    	<td>Nomor Pinjaman</td>
+		<td>: <input type="number" placeholder="Nomor Pinjaman"><br></td>
+	<tr>
+		<!--<td>Tanggal Peminjaman</td>
+		<td>: <select name="tgl">
+        <option value="pilih">1</option>
+        <option value="pilih">2</option>
+        <option value="pilih">3</option>
+        <option value="pilih">4</option>
+        <option value="pilih">5</option>
+        <option value="pilih">6</option>
+        <option value="pilih">7</option>
+        <option value="pilih">8</option>
+        <option value="pilih">9</option>
+        <option value="pilih">10</option>
+        <option value="pilih">11</option>
+        <option value="pilih">12</option>
+        <option value="pilih">13</option>
+        <option value="pilih">14</option>
+        <option value="pilih">15</option>
+        <option value="pilih">16</option>
+        <option value="pilih">17</option>
+        <option value="pilih">18</option>
+        <option value="pilih">19</option>
+        <option value="pilih">20</option>
+        <option value="pilih">21</option>
+        <option value="pilih">22</option>
+        <option value="pilih">23</option>
+        <option value="pilih">24</option>
+        <option value="pilih">25</option>
+        <option value="pilih">26</option>
+        <option value="pilih">27</option>
+        <option value="pilih">28</option>
+        <option value="pilih">29</option>
+        <option value="pilih">30</option>
+        <option value="pilih">31</option>
+        </select>
+         / <select name="bln">
+        <option value="pilih">1</option>
+        <option value="pilih">2</option>
+        <option value="pilih">3</option>
+        <option value="pilih">4</option>
+        <option value="pilih">5</option>
+        <option value="pilih">6</option>
+        <option value="pilih">7</option>
+        <option value="pilih">8</option>
+        <option value="pilih">9</option>
+        <option value="pilih">10</option>
+        <option value="pilih">11</option>
+        <option value="pilih">12</option>
+        </select>
+         / <Select name="thn">
+        <option value="pilih">2015</option>
+        <option value="pilih">2016</option>
+        <option value="pilih">2017</option>
+        <option value="pilih">2018</option>
+        <option value="pilih">2019</option>
+        <option value="pilih">2020</option>
+        <option value="pilih">2021</option> 
+        <option value="pilih">2022</option>
+        <option value="pilih">2023</option>
+        <option value="pilih">2024</option>
+        <option value="pilih">2025</option>  
+        </select>
+			</td>
+	
+		<td>Tanggal Jatuh Tempo</td>
+		<td>: <select name="tgl">
+        <option value="pilih">1</option>
+        <option value="pilih">2</option>
+        <option value="pilih">3</option>
+        <option value="pilih">4</option>
+        <option value="pilih">5</option>
+        <option value="pilih">6</option>
+        <option value="pilih">7</option>
+        <option value="pilih">8</option>
+        <option value="pilih">9</option>
+        <option value="pilih">10</option>
+        <option value="pilih">11</option>
+        <option value="pilih">12</option>
+        <option value="pilih">13</option>
+        <option value="pilih">14</option>
+        <option value="pilih">15</option>
+        <option value="pilih">16</option>
+        <option value="pilih">17</option>
+        <option value="pilih">18</option>
+        <option value="pilih">19</option>
+        <option value="pilih">20</option>
+        <option value="pilih">21</option>
+        <option value="pilih">22</option>
+        <option value="pilih">23</option>
+        <option value="pilih">24</option>
+        <option value="pilih">25</option>
+        <option value="pilih">26</option>
+        <option value="pilih">27</option>
+        <option value="pilih">28</option>
+        <option value="pilih">29</option>
+        <option value="pilih">30</option>
+        <option value="pilih">31</option>
+        </select>
+         / <select name="bln">
+        <option value="pilih">1</option>
+        <option value="pilih">2</option>
+        <option value="pilih">3</option>
+        <option value="pilih">4</option>
+        <option value="pilih">5</option>
+        <option value="pilih">6</option>
+        <option value="pilih">7</option>
+        <option value="pilih">8</option>
+        <option value="pilih">9</option>
+        <option value="pilih">10</option>
+        <option value="pilih">11</option>
+        <option value="pilih">12</option>
+        </select>
+         / <Select name="thn">
+        <option value="pilih">2015</option>
+        <option value="pilih">2016</option>
+        <option value="pilih">2017</option>
+        <option value="pilih">2018</option>
+        <option value="pilih">2019</option>
+        <option value="pilih">2020</option>
+        <option value="pilih">2021</option> 
+        <option value="pilih">2022</option>
+        <option value="pilih">2023</option>
+        <option value="pilih">2024</option>
+        <option value="pilih">2025</option>
+        </select></td></tr>-->
+	<tr>
+		<td colspan="2"><fieldset>
+			<legend><b><h3>Informasi Peminjam</h3></b></legend>
+		Nama Peminjam&emsp; :  <input type="text" placeholder="Nama Lengkap"><br><br>
+		Alamat&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;  <textarea name="Alamat" rows="4" cols="22"> </textarea><br><br>
+		Pekerjaan&emsp;&emsp;&emsp;&emsp;: <input type="text" placeholder="Pekerjaan"><br><br>
+		Identitas&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;: <input type="text" placeholder="KTP/KTM/SIM"><br><br>
+		No. Identitas&emsp;&emsp;&nbsp;&nbsp; : <input type="number" placeholder="Nomor"><br><br>
+	</fieldset></td>
+		<td colspan="2"><fieldset>
+    <legend><b><h3>Informasi Kredit</h3></b></legend>
+    	<!--<input type="radio" name="gen">Bunga Flat &nbsp; &nbsp; &nbsp;
+		<input type="radio" name="gen">Bunga Efektif<br><br>-->
+		Bunga (%)&emsp;&emsp;&emsp;&emsp; :  <input type="text" placeholder="Nomor" value="0.12" name="bunga" id="jmlbunga" onchange="jmlkembalian()" readonly><br><br>
+		Jumlah Pinjaman&nbsp;&nbsp;&emsp; : <input type="number" name="angsuran" id="jmlangsuran" value="0" onchange="jmlkembalian()"><br><br>
+		</fieldset>
+	</td></tr>
+
+	<tr>
+		<td rowspan="2">Keterangan</td>
+		<td rowspan="2"> <textarea name="Keterangan" rows="4" cols="23"></textarea><br></td>
+		<td>Jumlah Yang di Kembalikan</td>
+		<td>: <input type="text" name="Angsuran" id="jmlkembalian" value="" onchange="bulan()" readonly><br></td><br><br>
+		<td>Jumlah Angsuran</td>
+		<td>: <input type="text" name="blnAngsuran" id="bulan" value="" readonly><br></td>
+
+	</tr>
+	<tr>	
+		<td>Jumlah Periode(bulan)</td>
+		<td>: <input type="number" name="Periode" id="periode_php" onchange="bulan()" value="12" readonly><br></td>
+	</tr>
+	<tr>
+		<!--<td colspan="2"><input type="checkbox" name="print">Cetak Slip Pinjaman</td>-->
+		<td><button >Simpan</button></td>
+		<td><button type="reset">Batal</button></td>
+		<td><input type="button" onclick="window.print()" value="cetak"></td>
+	</tr>
+
+</form>
+<script type="text/javascript">
+		function jmlkembalian() {
+		var dikembalikan = 0.12 * parseInt(document.getElementById('jmlangsuran').value);
+		var php = dikembalikan
+
+		document.getElementById('jmlkembalian').value = php;
+		}
+
+		function bulan(){
+		var totalangsuran = parseInt(document.getElementById('jmlkembalian').value) / parseInt(document.getElementById('periode_php').value);
+		document.getElementById('bulan').value = totalangsuran;
+		}
+		</script>
+</body>
+</html>

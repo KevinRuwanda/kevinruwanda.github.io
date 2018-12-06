@@ -1,0 +1,331 @@
+body{
+	margin: 0;
+	padding: 0;
+	min-height: 1000px;
+	font-family: sans-serif;
+	padding-top: 100px;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background: #000;
+	transition: 1s;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+header.scrolled{
+	height: 100px;
+}
+header .logo{
+	position: absolute;
+	top: calc(10% - 30px);
+	left: calc(42% - 0px);
+	transition: 1s;
+}
+header.scrolled .logo{
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+header img.banner{
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transition: 1s;
+}
+header.scrolled img.banner{
+	opacity: 0;
+}
+header .logo img{
+	width: 230px;
+	transition: 1s;
+}
+header.scrolled .logo img{
+	width: 80px;
+}
+ul{
+	position: absolute;
+	margin-top: 15px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: #BA72C9;
+	padding: 0;
+	visibility: hidden;
+	transform: translateX(100px);
+}
+header.scrolled ul{
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+}
+ul li{
+	list-style: none;
+	position: relative;
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid #000;
+	float: left;
+	box-sizing: border-box;
+	transition: 0.5s;
+	text-align: center;
+	overflow: hidden;
+}
+ul li:nth-child(1){
+	background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.0)), url(gambar/1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(2){
+	background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.0)), url(gambar/2.png);
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(3){
+	background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.0)), url(gambar/3.png);
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(4){
+	background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.0)), url(gambar/4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(5){
+	background-image:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.0)), url(gambar/5.jpg);
+	background-size: cover;
+	background-position: center;
+}
+ul:hover li{
+	width: 10%;
+}
+ul li:hover{
+	width: 60%;
+}
+ul li .content{
+	position: absolute;
+	bottom: -500px;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	color: #fff;
+	opacity: 0;
+}
+ul li:hover .content{
+	bottom: 100px;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+	opacity: 1;
+}
+ul li .jdl i{
+	position: absolute;
+	top: 150px;
+	left: 0;
+	font-size: 78px;
+	width: 100%;
+	color: #fff;
+	transition: 0.5s;
+	overflow: hidden;
+	opacity: 1;
+}
+ul li:hover .jdl i{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	font-size: 78px;
+	width: 100%;
+	visibility: hidden;
+	color: #fff;
+	opacity: 0;
+}
+ul li .ttl{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	transition: 0.5s;
+	box-sizing: border-box;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+}
+ul li:hover .ttl{
+	top: 200px;
+	left: 50%;
+	visibility: visible;
+	color: #fff;
+	opacity: 1;
+}
+ul li .abc{
+	position: absolute;
+	bottom: : -200px;
+	left: 0;
+	width: 100%;
+	transition: 0.5s;
+	visibility: hidden;
+	transition-delay: 0.5s;
+	opacity: 0;
+}
+ul li:hover .abc{
+	bottom: : 200px;
+	left: 0%;
+	visibility: visible;
+	opacity: 1;
+}
+ul li .login{
+	position: absolute;
+	bottom: : -200px;
+	left: 0;
+	width: 100%;
+	transition: 0.5s;
+	visibility: hidden;
+	transition-delay: 0.5s;
+	opacity: 0;
+}
+ul li:hover .login{
+	bottom: : 200px;
+	left: 0%;
+	visibility: visible;
+	opacity: 1;
+}
+nav a{
+	position: absolute;
+	margin-top: 600px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 280px;
+	height: 50px;
+	background: #1A1501;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	color: #ff0;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: verdana;
+	letter-spacing: 3px;
+	border-radius: 8px;
+}
+nav a:before,
+nav a:after,
+nav a span:before,
+nav a span:after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #ff0;
+	transition: 1s;
+	mix-blend-mode: hue;
+}
+nav a:before{
+	top: -2px;
+	left: -2px;
+}
+nav a:after{
+	top: -2px;
+	right: -2px;
+}
+nav a span:before{
+	bottom: -2px;
+	left: -2px;
+}
+nav a span:after{
+	bottom: -2px;
+	right: -2px;
+}
+nav a:hover:before,
+nav a:hover:after,
+nav a:hover span:before,
+nav a:hover span:after{
+	width: calc( 180px / 2);
+	height: calc( 50px / 2);
+}
+h1{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	font-size: 	28px;
+	font-family: consolas;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+	color: transparent;
+	visibility: hidden;
+	transform: translateX(100px);
+}
+h3{
+	position: absolute;
+	font-size: 	32px;
+	font-family: consolas;
+	letter-spacing: 2px;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+p{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+header.scrolled h1{
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+}
+h1:before{
+		content: attr(data-text);
+		position: 	absolute;	
+		top: 0;
+		left: 0;
+		width: 	100%;
+		height: 100%;
+		color: 	#EEBD06;
+		overflow: hidden;
+		border-right: 1px solid #000;
+		animation: type 10s steps(39) infinite;
+		white-space: nowrap;
+}
+@keyframes type{
+	0%{
+		width: 0;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0;
+	}
+}
+header.scrolled .circle{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+header.scrolled .circle .share{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	background: #607d8b;
+	border-radius: 50%;
+	z-index: 1;
+	box-shadow: 0 0 0 2px #112833;
+}
